@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crypto Scam Detection Quiz — CryptoStrapon</title>
+<meta name="description" content="Free, open-source crypto scam detection quiz. 50 real-world scenarios covering drainers, approval phishing, rug pulls, AI scams and more. Built and maintained by CryptoStrapon as an open educational resource.">
+<style>
+  :root{
+    --bg:#0d0718; --panel:#150c26; --panel-border:#2a1b45;
+    --text:#f1ecfb; --muted:#a393c4;
+    --accent1:#c13fd6; --accent2:#f0a24a;
+    --crit:#e5484d; --high:#f0a24a; --ok:#35c46b; --bad:#e5484d;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.5;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:28px 18px 80px}
+  header{text-align:center;margin-bottom:28px}
+  h1{
+    font-size:1.9rem;margin:0 0 8px;
+    background:linear-gradient(90deg,var(--accent1),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  header p{color:var(--muted);margin:0;font-size:.95rem}
+  header a{color:var(--accent2)}
+  .card{
+    background:var(--panel);border:1px solid var(--panel-border);
+    border-radius:14px;padding:22px;margin-bottom:16px;
+  }
+  .meta{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--muted);margin-bottom:10px}
+  .badge{
+    padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:600;
+    text-transform:uppercase;letter-spacing:.03em;
+  }
+  .badge.critical{background:rgba(229,72,77,.18);color:#ff8b8e}
+  .badge.high{background:rgba(240,162,74,.18);color:#ffbd73}
+  .progress{height:5px;background:#241539;border-radius:3px;overflow:hidden;margin-bottom:20px}
+  .progress-bar{height:100%;background:linear-gradient(90deg,var(--accent1),var(--accent2));transition:width .3s}
+  .scenario{font-size:1.02rem;margin-bottom:14px}
+  .question{color:var(--accent2);font-weight:600;margin-bottom:16px}
+  .option{
+    display:block;width:100%;text-align:left;background:#1b1030;border:1px solid var(--panel-border);
+    color:var(--text);padding:13px 16px;border-radius:10px;margin-bottom:10px;cursor:pointer;
+    font-size:.95rem;transition:border-color .15s,background .15s;
+  }
+  .option:hover:not(:disabled){border-color:var(--accent1)}
+  .option:disabled{cursor:default}
+  .option.correct{background:rgba(53,196,107,.15);border-color:var(--ok)}
+  .option.incorrect{background:rgba(229,72,77,.15);border-color:var(--bad)}
+  .explain{
+    margin-top:14px;padding:14px 16px;border-radius:10px;background:#1b1030;
+    border-left:3px solid var(--accent1);font-size:.92rem;color:#dcd3ef
+  }
+  .next-btn{
+    margin-top:18px;background:linear-gradient(90deg,var(--accent1),var(--accent2));
+    border:none;color:#1a0d2e;font-weight:700;padding:12px 22px;border-radius:10px;
+    cursor:pointer;font-size:.95rem;
+  }
+  .next-btn:hover{opacity:.9}
+  .start-screen,.result-screen{text-align:center}
+  .start-screen p,.result-screen p{color:var(--muted)}
+  .big-btn{
+    background:linear-gradient(90deg,var(--accent1),var(--accent2));border:none;color:#1a0d2e;
+    font-weight:700;padding:14px 32px;border-radius:12px;font-size:1.05rem;cursor:pointer;margin-top:10px
+  }
+  .result-score{font-size:2.6rem;font-weight:800;margin:10px 0}
+  .tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:14px 0}
+  .tag{background:#1b1030;border:1px solid var(--panel-border);border-radius:999px;padding:4px 12px;font-size:.78rem;color:var(--muted)}
+  footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:40px}
+  footer a{color:var(--accent2)}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Crypto Scam Detection Quiz</h1>
+    <p>50 real scenarios, open-sourced for education. From <a href="https://cryptostrapon.com" target="_blank" rel="noopener">CryptoStrapon</a> — Free AI Scam Detector &amp; Education Hub.</p>
+  </header>
+
+  <div id="start" class="card start-screen">
+    <p><strong>8 randomized scenarios</strong> drawn from a pool of 50 documented crypto scam cases — Ponzi schemes, wallet drainers, approval phishing, AI deepfakes, bridge exploits and more.</p>
+    <p>Pick the red flag before the victim did. Replay for a different set every time.</p>
+    <div class="tags">
+      <span class="tag">8 random of 50</span>
+      <span class="tag">~5 minutes</span>
+      <span class="tag">Free &amp; open source</span>
+    </div>
+    <button class="big-btn" onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz" class="hidden"></div>
+
+  <div id="result" class="card result-screen hidden">
+    <p>Quiz complete</p>
+    <div class="result-score" id="score-text"></div>
+    <p id="score-label"></p>
+    <button class="big-btn" onclick="location.reload()">Try Again</button>
+  </div>
+
+  <footer>
+    Educational resource only — not financial or legal advice.<br>
+    Question data and full write-ups at <a href="https://cryptostrapon.com/scam-quiz" target="_blank" rel="noopener">cryptostrapon.com/scam-quiz</a> ·
+    <a href="https://github.com/cryptostrapon/crypto-scam-quiz" target="_blank" rel="noopener">Source &amp; contributing</a>
+  </footer>
+</div>
+
+<script>
+let ALL = [];
+let pool = [];
+let current = 0;
+let score = 0;
+
+async function loadQuestions() {
+  const res = await fetch('questions.json');
+  ALL = await res.json();
+}
+
+function pickRandom(n) {
+  const copy = [...ALL];
+  const picked = [];
+  for (let i = 0; i < n && copy.length; i++) {
+    const idx = Math.floor(Math.random() * copy.length);
+    picked.push(copy.splice(idx, 1)[0]);
+  }
+  return picked;
+}
+
+async function startQuiz() {
+  if (!ALL.length) await loadQuestions();
+  pool = pickRandom(8);
+  current = 0;
+  score = 0;
+  document.getElementById('start').classList.add('hidden');
+  document.getElementById('result').classList.add('hidden');
+  document.getElementById('quiz').classList.remove('hidden');
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = pool[current];
+  const pct = Math.round((current / pool.length) * 100);
+  const sevClass = q.severity === 'critical' ? 'critical' : 'high';
+  document.getElementById('quiz').innerHTML = `
+    <div class="card">
+      <div class="meta">
+        <span>Question ${current + 1} of ${pool.length}</span>
+        <span class="badge ${sevClass}">${q.severity} · ${q.category}</span>
+      </div>
+      <div class="progress"><div class="progress-bar" style="width:${pct}%"></div></div>
+      <div class="scenario">${q.scenario}</div>
+      <div class="question">${q.question}</div>
+      <div id="options"></div>
+      <div id="explain" class="hidden"></div>
+      <button id="next" class="next-btn hidden" onclick="nextQuestion()">
+        ${current + 1 === pool.length ? 'See Results' : 'Next Question'}
+      </button>
+    </div>
+  `;
+  const optWrap = document.getElementById('options');
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'option';
+    btn.textContent = String.fromCharCode(65 + i) + '.  ' + opt;
+    btn.onclick = () => answer(i);
+    optWrap.appendChild(btn);
+  });
+}
+
+function answer(i) {
+  const q = pool[current];
+  const buttons = document.querySelectorAll('.option');
+  buttons.forEach((b, idx) => {
+    b.disabled = true;
+    if (idx === q.correctAnswer) b.classList.add('correct');
+    else if (idx === i) b.classList.add('incorrect');
+  });
+  if (i === q.correctAnswer) score++;
+  document.getElementById('explain').classList.remove('hidden');
+  document.getElementById('explain').innerHTML = `<strong>${i === q.correctAnswer ? 'Correct.' : 'Not quite.'}</strong> ${q.explanation}`;
+  document.getElementById('explain').className = 'explain';
+  document.getElementById('next').classList.remove('hidden');
+}
+
+function nextQuestion() {
+  current++;
+  if (current >= pool.length) {
+    showResult();
+  } else {
+    renderQuestion();
+  }
+}
+
+function showResult() {
+  document.getElementById('quiz').classList.add('hidden');
+  document.getElementById('result').classList.remove('hidden');
+  const pct = Math.round((score / pool.length) * 100);
+  document.getElementById('score-text').textContent = score + ' / ' + pool.length;
+  let label = 'Keep practicing — pattern recognition is cheaper than fund recovery.';
+  if (pct >= 88) label = 'Expert level. You spot the tell before the pitch finishes.';
+  else if (pct >= 60) label = 'Solid instincts — review the ones you missed.';
+  document.getElementById('score-label').textContent = label;
+}
+
+loadQuestions();
+</script>
+</body>
+</html>
