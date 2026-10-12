@@ -1,5 +1,7 @@
 # Crypto Scam Detection Quiz
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23326039.svg)](https://doi.org/10.5281/zenodo.23326039)
+
 A free, open-source, interactive quiz that trains people to recognize crypto scam patterns before they fall for them. 50 scenarios based on scam patterns we have observed in our investigations — Ponzi schemes, wallet drainers, approval phishing, fake tokens/honeypots, bridge exploits, AI deepfakes, OTC fraud, money laundering, and more.
 
 **Live demo:** https://cryptostrapon.github.io/crypto-scam-quiz/

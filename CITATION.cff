@@ -1,8 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this material, please cite it as below."
 title: "Crypto Scam Detection Quiz"
-abstract: "An open quiz of 50 real-world crypto scam scenarios with explanations of the underlying red-flag patterns."
+abstract: "An open quiz of 50 crypto scam scenarios with explanations of the underlying red-flag patterns."
 type: dataset
+doi: 10.5281/zenodo.23326039
 authors:
   - name: "CryptoStrapon"
     website: "https://cryptostrapon.com"
