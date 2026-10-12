@@ -19,7 +19,7 @@ Thanks for considering a contribution to the Crypto Scam Detection Quiz.
    }
    ```
 3. Keep `id` unique and sequential.
-3. Base new scenarios on real, documented incidents where possible — link a source in your PR description (news coverage, a post-mortem, a chain-analysis report, etc.).
+3. Base new scenarios on real incident patterns. If your scenario draws on a public incident, link a source in your PR description (news coverage, a post-mortem, a chain-analysis report, etc.); otherwise describe the pattern in general terms.
 4. Keep explanations focused on the *pattern* (what generalizes) rather than just "the right answer is C."
 
 ## Reporting a bug or factual error

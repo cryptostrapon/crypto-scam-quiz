@@ -1,13 +1,13 @@
 # Crypto Scam Detection Quiz
 
-A free, open-source, interactive quiz that trains people to recognize crypto scam patterns before they fall for them. 50 scenarios drawn from real, documented cases — Ponzi schemes, wallet drainers, approval phishing, fake tokens/honeypots, bridge exploits, AI deepfakes, OTC fraud, money laundering, and more.
+A free, open-source, interactive quiz that trains people to recognize crypto scam patterns before they fall for them. 50 scenarios based on scam patterns we have observed in our investigations — Ponzi schemes, wallet drainers, approval phishing, fake tokens/honeypots, bridge exploits, AI deepfakes, OTC fraud, money laundering, and more.
 
 **Live demo:** https://cryptostrapon.github.io/crypto-scam-quiz/
 **Full write-ups of each case:** https://cryptostrapon.com/dark-bits
 
 ## Why this exists
 
-Most scam-awareness content is a static list of "red flags to watch for." It doesn't test whether the reader can actually *apply* that knowledge under the same pressure a real scam creates (urgency, authority, too-good-to-be-true offers). This quiz is built from real incident write-ups so the scenarios read the way scams actually happen, not the way a listicle summarizes them.
+Most scam-awareness content is a static list of "red flags to watch for." It doesn't test whether the reader can actually *apply* that knowledge under the same pressure a real scam creates (urgency, authority, too-good-to-be-true offers). The scenarios are based on patterns observed in investigations, with specific names, amounts and identifying details removed or generalised, so they read the way scams actually happen, not the way a listicle summarizes them.
 
 Each session draws 8 random questions from the pool of 50, so repeat attempts stay useful.
 
@@ -50,4 +50,4 @@ If you add a new scenario, please include:
 
 ## About
 
-Maintained by [CryptoStrapon](https://cryptostrapon.com) — a free AI scam detector and crypto-scam education hub. We document real fraud cases and build free tools so people don't have to learn these lessons the expensive way.
+Maintained by [CryptoStrapon](https://cryptostrapon.com) — a free AI scam detector and crypto-scam education hub. We investigate crypto scams and build free tools so people don't have to learn these lessons the expensive way.
