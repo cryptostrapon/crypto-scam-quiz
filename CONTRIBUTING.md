@@ -33,3 +33,7 @@ Open an issue describing what's wrong. If a scenario is factually inaccurate or 
 ## Code of conduct
 
 Be respectful. This project exists to help people avoid losing money to fraud — keep contributions focused on that goal.
+
+## Licensing of contributions
+
+By contributing, you agree that code you submit is licensed under the MIT License and content you submit is licensed under CC BY 4.0, matching the rest of the repository.

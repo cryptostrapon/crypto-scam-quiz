@@ -45,7 +45,8 @@ If you add a new scenario, please include:
 ## License
 
 - Code (`index.html` and any scripts): [MIT](LICENSE)
-- Question content (`questions.json`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — reuse freely with attribution to CryptoStrapon.
+- Question content (`questions.json`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — reuse freely with attribution to CryptoStrapon. Full notice: [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
+- Citing: see [CITATION.cff](CITATION.cff). Security reports: see [SECURITY.md](SECURITY.md).
 
 ## About
 
