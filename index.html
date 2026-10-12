@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crypto Scam Detection Quiz — CryptoStrapon</title>
-<meta name="description" content="Free, open-source crypto scam detection quiz. 50 real-world scenarios covering drainers, approval phishing, rug pulls, AI scams and more. Built and maintained by CryptoStrapon as an open educational resource.">
+<meta name="description" content="Free, open-source crypto scam detection quiz. 50 scenarios based on observed scam patterns covering drainers, approval phishing, rug pulls, AI scams and more. Built and maintained by CryptoStrapon as an open educational resource.">
 <style>
   :root{
     --bg:#0d0718; --panel:#150c26; --panel-border:#2a1b45;
@@ -73,6 +73,47 @@
   footer a{color:var(--accent2)}
   .hidden{display:none}
 </style>
+<meta property="og:title" content="Crypto Scam Detection Quiz | CryptoStrapon">
+<meta property="og:description" content="Open dataset of 50 crypto scam scenarios with four answer options, the correct answer, an explanation of the red-flag pattern, severity and category.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cryptostrapon.github.io/crypto-scam-quiz/">
+<link rel="canonical" href="https://cryptostrapon.github.io/crypto-scam-quiz/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Crypto Scam Detection Quiz",
+  "description": "Open dataset of 50 crypto scam scenarios with four answer options, the correct answer, an explanation of the red-flag pattern, severity and category.",
+  "url": "https://cryptostrapon.github.io/crypto-scam-quiz/",
+  "identifier": "https://doi.org/10.5281/zenodo.23326039",
+  "sameAs": "https://doi.org/10.5281/zenodo.23326039",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Organization",
+    "name": "CryptoStrapon",
+    "url": "https://cryptostrapon.com"
+  },
+  "keywords": [
+    "crypto scams",
+    "scam awareness",
+    "web3 security",
+    "education",
+    "quiz"
+  ],
+  "inLanguage": "en",
+  "datePublished": "2026-10-12",
+  "version": "1.0.0",
+  "isBasedOn": "https://github.com/cryptostrapon/crypto-scam-quiz",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/cryptostrapon/crypto-scam-quiz/main/questions.json"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -82,7 +123,7 @@
   </header>
 
   <div id="start" class="card start-screen">
-    <p><strong>8 randomized scenarios</strong> drawn from a pool of 50 documented crypto scam cases — Ponzi schemes, wallet drainers, approval phishing, AI deepfakes, bridge exploits and more.</p>
+    <p><strong>8 randomized scenarios</strong> drawn from a pool of 50 scenarios based on observed scam patterns — Ponzi schemes, wallet drainers, approval phishing, AI deepfakes, bridge exploits and more.</p>
     <p>Pick the red flag before the victim did. Replay for a different set every time.</p>
     <div class="tags">
       <span class="tag">8 random of 50</span>
