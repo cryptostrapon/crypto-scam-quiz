@@ -80,5 +80,6 @@ This repository holds the 50 core scenarios. The version on [cryptostrapon.com/s
 
 ## Changelog
 
+- **v1.2.1:** re-balanced the answer options of six questions to match the website version. The longest option is now the correct one in 7 of 50 questions, and no option is more than 1.3 times longer than another.
 - **v1.2.0:** removed named real incidents from explanations, added a disclaimer and a code of conduct, added a favicon.
 - **v1.1:** rebalanced the answer options. Our own audit found that the longest option was the correct one in 47 of 50 questions, so the quiz could be passed without reading it. Options now have similar length (longest is correct in 16 of 50, close to chance). The audit script is a few lines of JavaScript; if you find another leak in the answer key, please open an issue.
