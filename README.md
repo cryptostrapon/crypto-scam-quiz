@@ -74,6 +74,11 @@ This quiz is for education only. It is not financial, legal or investment advice
 
 Found an error? Open a "Report an inaccuracy" issue or write to cryptostrapon@proton.me. Verified corrections are fixed as soon as we can and noted in the changelog.
 
+## Also on the website
+
+This repository holds the 50 core scenarios. The version on [cryptostrapon.com/scam-quiz](https://cryptostrapon.com/scam-quiz) also adds one question for every published investigation, so it keeps growing and now has 100+ scenarios. The 50 core scenarios here are the same as the first 50 there.
+
 ## Changelog
 
-- **v1.1:** rebalanced the answer options. Our own audit found that the longest option was the correct one in 47 of 50 questions, so the quiz could be passed without reading it. Options now have similar length (longest is correct in 15 of 50, close to chance). The audit script is a few lines of JavaScript; if you find another leak in the answer key, please open an issue.
+- **v1.2.0:** removed named real incidents from explanations, added a disclaimer and a code of conduct, added a favicon.
+- **v1.1:** rebalanced the answer options. Our own audit found that the longest option was the correct one in 47 of 50 questions, so the quiz could be passed without reading it. Options now have similar length (longest is correct in 16 of 50, close to chance). The audit script is a few lines of JavaScript; if you find another leak in the answer key, please open an issue.
