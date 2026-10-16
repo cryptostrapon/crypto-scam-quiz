@@ -1,0 +1,33 @@
+name: Suggest a scenario
+description: Propose a new scam scenario for the quiz
+title: "[Scenario] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario
+      description: What does the victim see or experience? Remove real names, amounts and identifying details.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Four options
+      description: One correct answer and three plausible wrong ones. Keep all four about the same length, so the answer cannot be guessed from its size.
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation
+      description: Teach the underlying pattern, not only which option is right.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source
+      description: Link to a public report or article that shows this pattern.
+    validations:
+      required: true
