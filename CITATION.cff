@@ -7,6 +7,8 @@ doi: 10.5281/zenodo.23326039
 authors:
   - name: "CryptoStrapon"
     website: "https://cryptostrapon.com"
+repository-code: "https://github.com/cryptostrapon/crypto-scam-quiz"
+url: "https://cryptostrapon.github.io/crypto-scam-quiz/"
 license: CC-BY-4.0
 date-released: "2026-10-12"
 keywords:

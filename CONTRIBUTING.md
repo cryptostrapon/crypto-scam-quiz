@@ -1,6 +1,13 @@
 # Contributing
 
-Thanks for considering a contribution to the Crypto Scam Detection Quiz.
+Thanks for helping improve the Crypto Scam Detection Quiz. Small fixes are as welcome as new scenarios.
+
+## Quick ways to help
+
+- Suggest a scenario: use the "Suggest a scenario" issue form.
+- Report a wrong fact, broken link or guessable answer: use the "Report an inaccuracy" issue form.
+- Ideas, translations and questions: start a thread in Discussions.
+- Open issues labelled "good first issue" and "help wanted" are a good place to start.
 
 ## Adding or correcting a scenario
 
@@ -19,20 +26,29 @@ Thanks for considering a contribution to the Crypto Scam Detection Quiz.
    }
    ```
 3. Keep `id` unique and sequential.
-3. Base new scenarios on observed scam patterns. If your scenario draws on a public incident, link a source in your PR description (news coverage, a post-mortem, a chain-analysis report, etc.); otherwise describe the pattern in general terms.
-4. Keep explanations focused on the *pattern* (what generalizes) rather than just "the right answer is C."
+4. Base new scenarios on observed scam patterns. If your scenario draws on a public incident, link a source in your PR description (news coverage, a post-mortem, a chain-analysis report, etc.); otherwise describe the pattern in general terms.
+5. Keep explanations focused on the *pattern* (what generalizes) rather than just "the right answer is C."
+
+## Answer quality rules (since v1.1)
+
+The quiz must not be passable by guessing from the shape of the answers. Please check before opening a PR:
+
+- All four options are similar in length. The correct option must not be the longest one by default, and no option should be more than about 1.3 times longer than another.
+- The correct answer is spread across positions A to D over the pool (no position should dominate).
+- Wrong options are plausible, not obviously silly, and no two options mean the same thing.
+- The question wording points to one clear answer.
 
 ## Reporting a bug or factual error
 
-Open an issue describing what's wrong. If a scenario is factually inaccurate or outdated (e.g. a scam technique that's since been patched/deprecated), please include a source for the correction.
+Open an issue using the forms. If a scenario is factually inaccurate or outdated (e.g. a scam technique that has since been patched or deprecated), please include a source for the correction.
 
 ## Code changes
 
-`index.html` is intentionally dependency-free (no build step, no frameworks) so it stays easy to audit and host anywhere. Please keep it that way — if a change needs a build step, open an issue first to discuss.
+`index.html` is intentionally dependency-free (no build step, no frameworks) so it stays easy to audit and host anywhere. Please keep it that way. If a change needs a build step, open an issue first to discuss.
 
 ## Code of conduct
 
-Be respectful. This project exists to help people avoid losing money to fraud — keep contributions focused on that goal.
+Be respectful. This project exists to help people avoid losing money to fraud, so keep contributions focused on that goal.
 
 ## Licensing of contributions
 
