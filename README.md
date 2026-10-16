@@ -68,6 +68,12 @@ If you add a new scenario, please include:
 
 Maintained by [CryptoStrapon](https://cryptostrapon.com) — a free AI scam detector and crypto-scam education hub. We investigate crypto scams and build free tools so people don't have to learn these lessons the expensive way.
 
+## Disclaimer and corrections
+
+This quiz is for education only. It is not financial, legal or investment advice. Company, wallet and product names appear only to show how scammers impersonate them. They do not imply wrongdoing by those companies. Scenarios are composites of observed patterns unless a public source is linked.
+
+Found an error? Open a "Report an inaccuracy" issue or write to cryptostrapon@proton.me. Verified corrections are fixed as soon as we can and noted in the changelog.
+
 ## Changelog
 
 - **v1.1:** rebalanced the answer options. Our own audit found that the longest option was the correct one in 47 of 50 questions, so the quiz could be passed without reading it. Options now have similar length (longest is correct in 15 of 50, close to chance). The audit script is a few lines of JavaScript; if you find another leak in the answer key, please open an issue.

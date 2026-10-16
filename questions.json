@@ -40,7 +40,7 @@
       "Hang up and contact Binance yourself through the official app or website"
     ],
     "correctAnswer": 3,
-    "explanation": "Binance NEVER calls users asking for 2FA codes or passwords. This is social engineering.",
+    "explanation": "Real exchange support teams do not call users to ask for 2FA codes or passwords. This is social engineering.",
     "severity": "critical",
     "category": "Social Engineering"
   },
@@ -445,7 +445,7 @@
       "The site had already stolen your seed phrase at the moment you connected"
     ],
     "correctAnswer": 1,
-    "explanation": "Drainers like Phantom wrap malicious signatures in 'SIWE' format to bypass wallet warnings. The EIP-712 signature can authorise Permit2, transferFrom, or seaport orders that drain everything. ALWAYS read the full signature content, not just the title.",
+    "explanation": "Drainer kits wrap malicious signatures in 'SIWE' format to bypass wallet warnings. The EIP-712 signature can authorise Permit2, transferFrom, or seaport orders that drain everything. ALWAYS read the full signature content, not just the title.",
     "severity": "critical",
     "category": "Wallet Drainer"
   },
