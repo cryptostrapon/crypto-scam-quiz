@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Crypto Scam Detection Quiz — CryptoStrapon</title>
+<title>Crypto Scam Detection Quiz | CryptoStrapon</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230b1020%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 font-family=%27Arial%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27%23f5a623%27%3ECS%3C/text%3E%3C/svg%3E">
 <meta name="description" content="Free, open-source crypto scam detection quiz. 50 scenarios based on observed scam patterns covering drainers, approval phishing, rug pulls, AI scams and more. Built and maintained by CryptoStrapon as an open educational resource.">
 <style>
   :root{
@@ -122,11 +123,11 @@
 <div class="wrap">
   <header>
     <h1>Crypto Scam Detection Quiz</h1>
-    <p>50 realistic scenarios, open-sourced for education. From <a href="https://cryptostrapon.com" target="_blank" rel="noopener">CryptoStrapon</a> — Free AI Scam Detector &amp; Education Hub.</p>
+    <p>50 realistic scenarios, open-sourced for education. From <a href="https://cryptostrapon.com" target="_blank" rel="noopener">CryptoStrapon</a> · Free AI Scam Detector &amp; Education Hub.</p>
   </header>
 
   <div id="start" class="card start-screen">
-    <p><strong>8 randomized scenarios</strong> drawn from a pool of 50 scenarios based on observed scam patterns — Ponzi schemes, wallet drainers, approval phishing, AI deepfakes, bridge exploits and more.</p>
+    <p><strong>8 randomized scenarios</strong> drawn from a pool of 50 scenarios based on observed scam patterns: Ponzi schemes, wallet drainers, approval phishing, AI deepfakes, bridge exploits and more.</p>
     <p>Pick the red flag before the victim did. Replay for a different set every time.</p>
     <div class="tags">
       <span class="tag">8 random of 50</span>
@@ -150,7 +151,7 @@
   </div>
 
   <footer>
-    Educational resource only — not financial or legal advice.<br>
+    Educational resource only, not financial or legal advice.<br>
     Question data and full write-ups at <a href="https://cryptostrapon.com/scam-quiz" target="_blank" rel="noopener">cryptostrapon.com/scam-quiz</a> ·
     <a href="https://github.com/cryptostrapon/crypto-scam-quiz" target="_blank" rel="noopener">Source &amp; contributing</a> ·
     <a href="https://github.com/cryptostrapon/crypto-scam-quiz" target="_blank" rel="noopener">&#9733; Star on GitHub</a>
@@ -248,9 +249,9 @@ function showResult() {
   document.getElementById('result').classList.remove('hidden');
   const pct = Math.round((score / pool.length) * 100);
   document.getElementById('score-text').textContent = score + ' / ' + pool.length;
-  let label = 'Keep practicing — pattern recognition is cheaper than fund recovery.';
+  let label = 'Keep practicing: pattern recognition is cheaper than fund recovery.';
   if (pct >= 88) label = 'Expert level. You spot the tell before the pitch finishes.';
-  else if (pct >= 60) label = 'Solid instincts — review the ones you missed.';
+  else if (pct >= 60) label = 'Solid instincts, review the ones you missed.';
   document.getElementById('score-label').textContent = label;
 }
 

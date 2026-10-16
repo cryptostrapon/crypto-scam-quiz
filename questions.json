@@ -115,7 +115,7 @@
       "No real risk, because an in-person handoff in a public café cannot be reversed"
     ],
     "correctAnswer": 1,
-    "explanation": "OTC transactions without escrow are extremely dangerous. Scammers can send fake transactions, use multisig wallets to reverse them, or simply steal physical cash. Always use trusted escrow services.",
+    "explanation": "OTC transactions without escrow are extremely dangerous. Scammers can show fake or unconfirmed transactions, or simply take the cash and vanish. Always use trusted escrow services.",
     "severity": "critical",
     "category": "OTC Fraud"
   },
@@ -151,16 +151,16 @@
   },
   {
     "id": 12,
-    "scenario": "You receive an email from CoinTracker asking you to update your preferences. The email looks legit but the link goes to 'cointracker-update.com' instead of 'cointracker.io'. The sender uses a Mixpanel domain.",
+    "scenario": "You receive an email from your portfolio-tracking app asking you to update your preferences. The email looks legit but the link goes to 'tracker-update.com' instead of the app's real domain. The sender uses a third-party analytics provider's domain.",
     "question": "What's happening?",
     "options": [
-      "The Mixpanel sender is normal, because marketing emails come from provider domains",
+      "The third-party sender is normal, because marketing emails come from provider domains",
       "Phishing built on a third-party breach: the link domain does not match the real site",
-      "A legitimate email sent through CoinTracker's marketing provider, so the link is safe",
-      "CoinTracker changed its domain recently, so the new address is expected"
+      "A legitimate email sent through the app's marketing provider, so the link is safe",
+      "The app changed its domain recently, so the new address is expected"
     ],
     "correctAnswer": 1,
-    "explanation": "Attackers exploit breaches at third-party providers (like Mixpanel) to obtain email lists and send convincing phishing. Always verify that link domains match the official site exactly.",
+    "explanation": "Attackers exploit breaches at third-party providers to obtain email lists and send convincing phishing. Always verify that link domains match the official site exactly.",
     "severity": "high",
     "category": "Data Breach"
   },
@@ -235,7 +235,7 @@
       "An email with a malware attachment that infected the employee's laptop"
     ],
     "correctAnswer": 2,
-    "explanation": "ShinyHunters hacked Figure Technology with a simple phone call. No exploit, no malware — just trust. The employee voluntarily gave remote access. Social engineering remains the most effective attack vector.",
+    "explanation": "A simple phone call was enough. No exploit, no malware, just trust: the employee voluntarily gave remote access. Voice phishing (vishing) remains one of the most effective attack vectors.",
     "severity": "high",
     "category": "Data Breach"
   },
@@ -256,16 +256,16 @@
   },
   {
     "id": 19,
-    "scenario": "A cross-chain bridge protocol receives a message that appears to come from Axelar (a legitimate messaging protocol). The message instructs releasing funds. The bridge processes it without verifying the sender.",
+    "scenario": "A cross-chain bridge protocol receives a message that appears to come from a legitimate cross-chain messaging protocol. The message instructs releasing funds. The bridge processes it without verifying the sender.",
     "question": "What went wrong?",
     "options": [
       "The contract audit was out of date by the time the bridge went live on mainnet",
-      "The bridge never verified the sender, so anyone could spoof an Axelar message",
+      "The bridge never verified the sender, so anyone could spoof a protocol message",
       "Users manually approved the transaction after reading a misleading wallet prompt",
-      "Axelar itself was hacked, and the bridge simply trusted whatever it relayed"
+      "The messaging protocol itself was hacked, and the bridge simply trusted whatever it relayed"
     ],
     "correctAnswer": 1,
-    "explanation": "The bridge lost funds because it didn't validate the sender of cross-chain messages. Anyone could send a spoofed message pretending to be Axelar. The audit passed, but the bridge didn't.",
+    "explanation": "The bridge lost funds because it didn't validate the sender of cross-chain messages. Anyone could send a spoofed message pretending to be the messaging protocol. The audit passed, but the bridge didn't.",
     "severity": "high",
     "category": "Bridge Exploit"
   },
@@ -331,26 +331,26 @@
   },
   {
     "id": 24,
-    "scenario": "A regulator in Asia announces the first stablecoin licenses to HSBC and other institutions. 18 days later an 'HSBC' token appears on Uniswap with a Big Four audit PDF and a landing at hsbc-stablecoin.io. The real issuer says the actual token doesn't launch until H2.",
+    "scenario": "A regulator in Asia announces the first stablecoin licenses to a large bank and other institutions. 18 days later a token carrying the bank's name appears on Uniswap with a Big Four audit PDF and a landing page at bank-stablecoin.io. The real issuer says the actual token doesn't launch until H2.",
     "question": "What's going on?",
     "options": [
       "A license is not a token: the real one is not live, so this one is a forgery",
-      "The hsbc-stablecoin.io landing page uses the HSBC name, which makes it official",
+      "The bank-stablecoin.io landing page uses the bank's name, which makes it official",
       "Early access from the licensed issuer, offered before the public launch",
       "A Big Four audit PDF validates the token, so a small purchase is reasonable"
     ],
     "correctAnswer": 0,
-    "explanation": "When a regulator licenses an issuer but the product hasn't deployed, every token using that name on-chain is, by definition, fake. Regulators don't authorise pre-launch retail sales. The Big Four PDF was Canva. The landing was the scammer's marketing.",
+    "explanation": "When a regulator licenses an issuer but the product hasn't deployed, every token using that name on-chain is, by definition, fake. Regulators don't authorise pre-launch retail sales. The audit PDF and the landing page were the scammer's marketing.",
     "severity": "critical",
     "category": "Stablecoin Impersonation"
   },
   {
     "id": 25,
-    "scenario": "A cross-chain protocol announces it's 'secured by LayerZero DVN'. You read the fine print: the configuration uses 1-of-1 DVN — a single verifier. That verifier gets compromised. A very large sum is gone.",
+    "scenario": "A cross-chain protocol announces it's 'secured by a decentralised verifier network (DVN)'. You read the fine print: the configuration is 1-of-1, a single verifier. That verifier gets compromised. A very large sum is gone.",
     "question": "What was the failure?",
     "options": [
       "The contract was never audited, so the fault lies with the team's process",
-      "LayerZero itself was breached at its core, and every integrator was exposed",
+      "The messaging layer itself was breached at its core, and every integrator was exposed",
       "A 1-of-1 verifier setup: one compromised party broke the whole stack",
       "Users were tricked into signing malicious transactions that moved the funds"
     ],
@@ -361,7 +361,7 @@
   },
   {
     "id": 26,
-    "scenario": "You receive a request to sign what looks like a standard EIP-7702 message — a 'code delegation authorisation' to enable smart-wallet features. The interface says it's only for 'gas sponsorship'.",
+    "scenario": "You receive a request to sign what looks like a standard EIP-7702 message: a 'code delegation authorisation' to enable smart-wallet features. The interface says it's only for 'gas sponsorship'.",
     "question": "What should you do?",
     "options": [
       "Sign, then revoke the delegation afterwards if anything looks wrong",
@@ -370,7 +370,7 @@
       "Refuse: a malicious delegation can empty the account in a single transaction"
     ],
     "correctAnswer": 3,
-    "explanation": "EIP-7702 lets an EOA delegate all its logic to a contract. A malicious signature turns your wallet into a remote drainer. There is no 'revoke afterwards' — the delegated code can empty the account before you open Etherscan.",
+    "explanation": "EIP-7702 lets an EOA delegate all its logic to a contract. A malicious signature turns your wallet into a remote drainer. Revoking afterwards is too late: the delegated code can empty the account before you open Etherscan.",
     "severity": "critical",
     "category": "Wallet Delegation"
   },
@@ -406,11 +406,11 @@
   },
   {
     "id": 29,
-    "scenario": "Every time you try to make a large swap on Uniswap, your transaction executes with 4% slippage — much more than the expected 0.5%. Looking at the block, you see two txs right before and after yours, from the same bot wallet.",
+    "scenario": "Every time you try to make a large swap on a DEX, your transaction executes with 4% slippage, much more than the expected 0.5%. Looking at the block, you see two txs right before and after yours, from the same bot wallet.",
     "question": "What's happening?",
     "options": [
       "A sandwich attack: a bot buys before you and sells after, profiting from you",
-      "A routing bug in Uniswap that quietly adds extra slippage to large orders",
+      "A routing bug in the DEX that quietly adds extra slippage to large orders",
       "High gas fees, which push the final execution price away from the quote",
       "Normal slippage for a trade of this size, so nothing is actually wrong"
     ],
@@ -475,7 +475,7 @@
       "A fake link posted by an impersonator, unrelated to the protocol's real accounts"
     ],
     "correctAnswer": 2,
-    "explanation": "Operation Atlantic exploited Permit2 re-approvals with infinite allowance. Even from legitimately compromised accounts, the approval leaves a back door open indefinitely. Permit2 with MAX_UINT256 value = guaranteed future drainage.",
+    "explanation": "Attackers exploit Permit2 re-approvals with infinite allowance. Even from legitimately compromised accounts, the approval leaves a back door open indefinitely. Permit2 with MAX_UINT256 value = guaranteed future drainage.",
     "severity": "critical",
     "category": "Approval Exploit"
   },
@@ -490,7 +490,7 @@
       "Pig butchering: weeks of trust building, then a fake platform that shows gains"
     ],
     "correctAnswer": 3,
-    "explanation": "Pig butchering invests in the relationship first, the scam second. The platform is a fake dashboard. Your first 'withdrawal' works to build trust. The second one doesn't — and then they ask you for 'taxes' to release the rest.",
+    "explanation": "Pig butchering invests in the relationship first, the scam second. The platform is a fake dashboard. Your first 'withdrawal' works to build trust. The second one doesn't, and then they ask you for 'taxes' to release the rest.",
     "severity": "critical",
     "category": "Pig Butchering"
   },
@@ -520,7 +520,7 @@
       "Bad luck: exploits are random events and tend to repeat for no reason"
     ],
     "correctAnswer": 1,
-    "explanation": "Verus and Ostium repeated the pattern: patch the exact exploit path instead of the validation that allowed it. If a post mortem does not show the test that reproduces the flaw, the protocol is still open.",
+    "explanation": "Repeat hacks follow the same pattern: patch the exact exploit path instead of the validation that allowed it. If a post mortem does not show the test that reproduces the flaw, the protocol is still open.",
     "severity": "critical",
     "category": "Repeat Exploit"
   },
@@ -535,7 +535,7 @@
       "BNB price volatility, which could cut the dollar value of the whole pool"
     ],
     "correctAnswer": 0,
-    "explanation": "The CodexField rug needed no bug at all. Admin permissions without a timelock plus unlocked liquidity is an exit button, and sooner or later somebody presses it.",
+    "explanation": "This kind of rug needs no bug at all. Admin permissions without a timelock plus unlocked liquidity is an exit button, and sooner or later somebody presses it.",
     "severity": "critical",
     "category": "Rug Pull"
   },
@@ -550,7 +550,7 @@
       "A one-pool oracle with no TWAP or second source, easy to move with a flash loan"
     ],
     "correctAnswer": 3,
-    "explanation": "Solido Money showed the classic oracle manipulation pattern. No TWAP, no multiple feeds, no deviation caps, and the price becomes a suggestion while the loan becomes a gift.",
+    "explanation": "This is the classic oracle manipulation pattern. No TWAP, no multiple feeds, no deviation caps, and the price becomes a suggestion while the loan becomes a gift.",
     "severity": "critical",
     "category": "Oracle Manipulation"
   },
@@ -580,7 +580,7 @@
       "Nothing: a paymaster only pays for gas and cannot affect your tokens at all"
     ],
     "correctAnswer": 2,
-    "explanation": "In the Lumi Finance drain the account signed an operation whose real scope nobody read. With smart accounts you sign intent and execution at once, so the entire object is the attack surface.",
+    "explanation": "In drains like this, the account signs an operation whose real scope nobody read. With smart accounts you sign intent and execution at once, so the entire object is the attack surface.",
     "severity": "critical",
     "category": "Smart Account"
   },
@@ -595,7 +595,7 @@
       "Voters, who did not read the proposal carefully before it was passed"
     ],
     "correctAnswer": 2,
-    "explanation": "As in the Drift/carbonvote exploit, if governance accepts any token that merely looks right, minting a copy costs pennies and voting power becomes free. The contract address is the only valid identity.",
+    "explanation": "If governance accepts any token that merely looks right, minting a copy costs pennies and voting power becomes free. The contract address is the only valid identity.",
     "severity": "critical",
     "category": "Governance"
   },
@@ -610,7 +610,7 @@
       "Avoid zero-knowledge protocols entirely, because their cryptography is weak"
     ],
     "correctAnswer": 1,
-    "explanation": "In the Aztec router exploit the cryptography held; the permissioned routing layer didn't. Infinite approvals to 'utility' contracts are what multiplies the damage.",
+    "explanation": "In router exploits like this the cryptography holds; the permissioned routing layer doesn't. Infinite approvals to 'utility' contracts are what multiplies the damage.",
     "severity": "high",
     "category": "Contract Exploit"
   },
@@ -640,7 +640,7 @@
       "Switch to a larger model, which reliably resists prompt injection attacks"
     ],
     "correctAnswer": 0,
-    "explanation": "Prompt injection (OWASP LLM01) can't be patched with more instructions — all external content is untrusted input. The only thing that works is shrinking what the agent can sign without you.",
+    "explanation": "Prompt injection (OWASP LLM01) can't be patched with more instructions: all external content is untrusted input. The only thing that works is shrinking what the agent can sign without you.",
     "severity": "critical",
     "category": "AI Scam"
   },
@@ -670,7 +670,7 @@
       "Nothing real: it only fakes balances, and the licence fee is the actual sale"
     ],
     "correctAnswer": 3,
-    "explanation": "Only Tether can issue USDT. 'Flash USDT software' sellers ship simulators, counterfeit tokens or plain malware — the single real money flow is your licence payment.",
+    "explanation": "Only Tether can issue USDT. 'Flash USDT software' sellers ship simulators, counterfeit tokens or plain malware. The single real money flow is your licence payment.",
     "severity": "critical",
     "category": "AI Scam"
   },
