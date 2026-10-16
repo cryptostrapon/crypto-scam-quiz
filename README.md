@@ -1,11 +1,24 @@
 # Crypto Scam Detection Quiz
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23326039.svg)](https://doi.org/10.5281/zenodo.23326039)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE) [![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-blue)](LICENSE-CONTENT.md) ![Scenarios: 50](https://img.shields.io/badge/scenarios-50-orange) [![Live demo](https://img.shields.io/badge/live-demo-brightgreen)](https://cryptostrapon.github.io/crypto-scam-quiz/)
 
 A free, open-source, interactive quiz that trains people to recognize crypto scam patterns before they fall for them. 50 scenarios based on scam patterns we have observed in our investigations — Ponzi schemes, wallet drainers, approval phishing, fake tokens/honeypots, bridge exploits, AI deepfakes, OTC fraud, money laundering, and more.
 
 **Live demo:** https://cryptostrapon.github.io/crypto-scam-quiz/
 **Full write-ups of each case:** https://cryptostrapon.com/dark-bits
+
+## Embed it
+
+Drop the quiz into a blog, a classroom page or a community wiki with one line:
+
+```html
+<iframe src="https://cryptostrapon.github.io/crypto-scam-quiz/" width="100%" height="720" style="border:0" title="Crypto scam quiz" loading="lazy"></iframe>
+```
+
+Or use the data directly: [`questions.json`](questions.json) is plain JSON (scenario, question, 4 options, correct answer, explanation, severity, category). Reuse it freely with attribution (CC BY 4.0).
+
+**Who it is for:** teachers and librarians, community moderators, wallet and exchange support teams, and anyone who wants a short practical scam test.
 
 ## Why this exists
 
@@ -54,3 +67,7 @@ If you add a new scenario, please include:
 ## About
 
 Maintained by [CryptoStrapon](https://cryptostrapon.com) — a free AI scam detector and crypto-scam education hub. We investigate crypto scams and build free tools so people don't have to learn these lessons the expensive way.
+
+## Changelog
+
+- **v1.1:** rebalanced the answer options. Our own audit found that the longest option was the correct one in 47 of 50 questions, so the quiz could be passed without reading it. Options now have similar length (longest is correct in 15 of 50, close to chance). The audit script is a few lines of JavaScript; if you find another leak in the answer key, please open an issue.
