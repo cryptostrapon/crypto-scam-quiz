@@ -68,6 +68,8 @@ If you add a new scenario, please include:
 
 Maintained by [CryptoStrapon](https://cryptostrapon.com) — a free AI scam detector and crypto-scam education hub. We investigate crypto scams and build free tools so people don't have to learn these lessons the expensive way.
 
+If this was useful, a star helps other people find it.
+
 ## Disclaimer and corrections
 
 This quiz is for education only. It is not financial, legal or investment advice. Company, wallet and product names appear only to show how scammers impersonate them. They do not imply wrongdoing by those companies. Scenarios are composites of observed patterns unless a public source is linked.
