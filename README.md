@@ -3,6 +3,14 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23326039.svg)](https://doi.org/10.5281/zenodo.23326039)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE) [![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-blue)](LICENSE-CONTENT.md) ![Scenarios: 50](https://img.shields.io/badge/scenarios-50-orange) [![Live demo](https://img.shields.io/badge/live-demo-brightgreen)](https://cryptostrapon.github.io/crypto-scam-quiz/)
 
+<p align="center">
+  <a href="https://cryptostrapon.github.io/crypto-scam-quiz/"><img src="https://img.shields.io/badge/%E2%96%B6%20Play%20the%20quiz-Live%20demo-a855f7?style=for-the-badge" alt="Play the quiz: live demo"></a>
+</p>
+
+<p align="center">
+  <a href="https://cryptostrapon.github.io/crypto-scam-quiz/"><img src="quiz_demo.gif" alt="Quiz demo: a scenario, four answers and the explanation after you pick one" width="560"></a>
+</p>
+
 A free, open-source, interactive quiz that trains people to recognize crypto scam patterns before they fall for them. 50 scenarios based on scam patterns we have observed in our investigations — Ponzi schemes, wallet drainers, approval phishing, fake tokens/honeypots, bridge exploits, AI deepfakes, OTC fraud, money laundering, and more.
 
 **Live demo:** https://cryptostrapon.github.io/crypto-scam-quiz/
@@ -46,7 +54,7 @@ Or just open `index.html` directly in a browser (fetch of `questions.json` needs
 
 ## Contributing
 
-New scenarios, corrections, translations, and accessibility improvements are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+New scenarios, corrections, translations, and accessibility improvements are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). New here? Start with an issue labeled [good first issue](https://github.com/cryptostrapon/crypto-scam-quiz/labels/good%20first%20issue).
 
 If you add a new scenario, please include:
 - A realistic `scenario` (what the victim sees/experiences)
@@ -68,7 +76,7 @@ If you add a new scenario, please include:
 
 Maintained by [CryptoStrapon](https://cryptostrapon.com) — a free AI scam detector and crypto-scam education hub. We investigate crypto scams and build free tools so people don't have to learn these lessons the expensive way.
 
-If this was useful, a star helps other people find it.
+**If this was useful, please star the repo. It helps others find it.** ⭐
 
 ## Disclaimer and corrections
 
