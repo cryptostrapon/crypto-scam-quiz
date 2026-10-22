@@ -1,7 +1,7 @@
 # Crypto Scam Detection Quiz
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23326039.svg)](https://doi.org/10.5281/zenodo.23326039)
-[![Code: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE) [![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-blue)](LICENSE-CONTENT.md) ![Scenarios: 50](https://img.shields.io/badge/scenarios-50-orange) [![Live demo](https://img.shields.io/badge/live-demo-brightgreen)](https://cryptostrapon.github.io/crypto-scam-quiz/)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE) [![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-blue)](LICENSE-CONTENT.md) ![Scenarios: 50](https://img.shields.io/badge/scenarios-50-orange) [![Live demo](https://img.shields.io/badge/live-demo-brightgreen)](https://cryptostrapon.github.io/crypto-scam-quiz/) [![GitHub stars](https://img.shields.io/github/stars/cryptostrapon/crypto-scam-quiz?style=social)](https://github.com/cryptostrapon/crypto-scam-quiz/stargazers) [![Last commit](https://img.shields.io/github/last-commit/cryptostrapon/crypto-scam-quiz)](https://github.com/cryptostrapon/crypto-scam-quiz/commits/main)
 
 <p align="center">
   <a href="https://cryptostrapon.github.io/crypto-scam-quiz/"><img src="https://img.shields.io/badge/%E2%96%B6%20Play%20the%20quiz-Live%20demo-a855f7?style=for-the-badge" alt="Play the quiz: live demo"></a>
@@ -15,6 +15,15 @@ A free, open-source, interactive quiz that trains people to recognize crypto sca
 
 **Live demo:** https://cryptostrapon.github.io/crypto-scam-quiz/
 **Full write-ups of each case:** https://cryptostrapon.com/dark-bits
+
+## Why star this?
+
+- It is useful today: 50 realistic scam scenarios, 5 minutes, no sign-up, no tracking.
+- It is open: MIT code and CC BY 4.0 questions, so schools, support teams and communities can reuse it.
+- It is easy to embed: one iframe or one JSON file.
+- It keeps growing: the website version adds a scenario for every new investigation and already has 100+.
+
+A star helps other people find it.
 
 ## Embed it
 
