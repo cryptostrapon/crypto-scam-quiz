@@ -21,7 +21,7 @@ A free, open-source, interactive quiz that trains people to recognize crypto sca
 - It is useful today: 50 realistic scam scenarios, 5 minutes, no sign-up, no tracking.
 - It is open: MIT code and CC BY 4.0 questions, so schools, support teams and communities can reuse it.
 - It is easy to embed: one iframe or one JSON file.
-- It keeps growing: the website version adds a scenario for every new investigation and already has 100+.
+- It keeps growing: the website version adds a scenario for every new investigation and already has 104.
 
 A star helps other people find it.
 
@@ -95,7 +95,7 @@ Found an error? Open a "Report an inaccuracy" issue or write to cryptostrapon@pr
 
 ## Also on the website
 
-This repository holds the 50 core scenarios. The version on [cryptostrapon.com/scam-quiz](https://cryptostrapon.com/scam-quiz) also adds one question for every published investigation, so it keeps growing and now has 100+ scenarios. The 50 core scenarios here are the same as the first 50 there.
+This repository holds the 50 core scenarios. The version on [cryptostrapon.com/scam-quiz](https://cryptostrapon.com/scam-quiz) also adds one question for every published investigation, so it keeps growing and now has 104 scenarios. The 50 core scenarios here are the same as the first 50 there.
 
 ## Changelog
 
