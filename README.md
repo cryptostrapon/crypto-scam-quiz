@@ -33,7 +33,7 @@ Drop the quiz into a blog, a classroom page or a community wiki with one line:
 <iframe src="https://cryptostrapon.github.io/crypto-scam-quiz/" width="100%" height="720" style="border:0" title="Crypto scam quiz" loading="lazy"></iframe>
 ```
 
-Or use the data directly: [`questions.json`](questions.json) is plain JSON (scenario, question, 4 options, correct answer, explanation, severity, category). Reuse it freely with attribution (CC BY 4.0).
+Or use the data directly: [`questions.json`](questions.json) is plain JSON (scenario, question, 4 options, correct answer, explanation, severity, category). The same 50 scenarios in Spanish are in [`questions_es.json`](questions_es.json), with the same IDs and answers. Reuse them freely with attribution (CC BY 4.0).
 
 **Who it is for:** teachers and librarians, community moderators, wallet and exchange support teams, and anyone who wants a short practical scam test.
 
@@ -48,6 +48,7 @@ Each session draws 8 random questions from the pool of 50, so repeat attempts st
 ```
 index.html       Single-file static quiz (vanilla HTML/CSS/JS, no build step, no dependencies)
 questions.json    The full question bank — scenario, question, 4 options, correct answer, explanation, severity, category
+questions_es.json The same 50 scenarios in Spanish, same IDs and answers
 ```
 
 ## Running it locally
@@ -77,7 +78,7 @@ If you add a new scenario, please include:
 ## License
 
 - Code (`index.html` and any scripts): [MIT](LICENSE)
-- Question content (`questions.json`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — reuse freely with attribution to CryptoStrapon. Full notice: [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
+- Question content (`questions.json`, `questions_es.json`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — reuse freely with attribution to CryptoStrapon. Full notice: [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
 - Citing: see [CITATION.cff](CITATION.cff). Security reports: see [SECURITY.md](SECURITY.md).
 - Write-up: [An open crypto-scam quiz in one HTML file](https://dev.to/cryptostrapon/an-open-crypto-scam-quiz-in-one-html-file-no-build-step-mit-code-cc-by-40-content-47d9) (dev.to).
 
