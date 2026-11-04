@@ -33,7 +33,7 @@ Drop the quiz into a blog, a classroom page or a community wiki with one line:
 <iframe src="https://cryptostrapon.github.io/crypto-scam-quiz/" width="100%" height="720" style="border:0" title="Crypto scam quiz" loading="lazy"></iframe>
 ```
 
-Or use the data directly: [`questions.json`](questions.json) is plain JSON (scenario, question, 4 options, correct answer, explanation, severity, category). The same 50 scenarios in Spanish are in [`questions_es.json`](questions_es.json), with the same IDs and answers. Reuse them freely with attribution (CC BY 4.0).
+Or use the data directly: [`questions.json`](questions.json) is plain JSON (scenario, question, 4 options, correct answer, explanation, severity, category). The same 50 scenarios in Spanish are in [`questions_es.json`](questions_es.json), with the same IDs and answers. Reuse them freely with attribution (CC BY 4.0). The Spanish version of the live quiz: [cryptostrapon.com/es/scam-quiz](https://cryptostrapon.com/es/scam-quiz).
 
 **Who it is for:** teachers and librarians, community moderators, wallet and exchange support teams, and anyone who wants a short practical scam test.
 
