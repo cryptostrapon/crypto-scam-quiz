@@ -1,6 +1,6 @@
 # Content license: CC BY 4.0
 
-The quiz questions, options and explanations (`questions.json`) are licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+The quiz questions, options and explanations (`questions.json` in English and `questions_es.json` in Spanish) are licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
 
 You are free to share and adapt the material for any purpose, including commercially, as long as you:
 
