@@ -21,7 +21,8 @@ A free, open-source, interactive quiz that trains people to recognize crypto sca
 - It is useful today: 50 realistic scam scenarios, 5 minutes, no sign-up, no tracking.
 - It is open: MIT code and CC BY 4.0 questions, so schools, support teams and communities can reuse it.
 - It is easy to embed: one iframe or one JSON file.
-- It keeps growing: the website version adds a scenario for every new investigation and already has 106.
+- It keeps growing: the website version adds a scenario for every new investigation and already has 107.
+- It is listed in [Cybersecurity Educational Resources](https://github.com/CSIRT-MU/edu-resources) by CSIRT-MU, Masaryk University.
 
 A star helps other people find it.
 
