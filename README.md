@@ -107,4 +107,4 @@ This repository holds the 50 core scenarios. The version on [cryptostrapon.com/s
 
 ## Show your support
 
-If the quiz taught you something new, a star helps other people find it: ⭐ [star the repo](https://github.com/cryptostrapon/crypto-scam-quiz/stargazers). New scenarios and translations are welcome — see the open issues.
+If the quiz taught you something new, consider [starring the repository](https://github.com/cryptostrapon/crypto-scam-quiz) to help other people discover it. New scenarios, translations and corrections are welcome in the [issue tracker](https://github.com/cryptostrapon/crypto-scam-quiz/issues).
