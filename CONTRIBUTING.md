@@ -25,9 +25,28 @@ Thanks for helping improve the Crypto Scam Detection Quiz. Small fixes are as we
      "category": "Short category label"
    }
    ```
-3. Keep `id` unique and sequential.
+3. Keep `id` unique. Use the next unused ID for a new scenario, and do not renumber existing scenarios.
 4. Base new scenarios on observed scam patterns. If your scenario draws on a public incident, link a source in your PR description (news coverage, a post-mortem, a chain-analysis report, etc.); otherwise describe the pattern in general terms.
 5. Keep explanations focused on the *pattern* (what generalizes) rather than just "the right answer is C."
+
+## Validate question data
+
+With Node.js 20 or newer, run these dependency-free checks before opening a PR:
+
+```sh
+node scripts/validate-questions.js
+node --test scripts/validate-questions.test.js
+```
+
+The validator checks required text, unique positive IDs, four distinct options,
+answer indexes and supported severity values. It also verifies that
+`questions_es.json` has the same IDs, answer indexes and severities as the English
+bank. When adding or changing an English question, update the Spanish counterpart
+too; if you need translation help, discuss it in the issue before submission.
+
+GitHub Actions runs both commands on pull requests. These structural checks do
+not verify translation quality, factual accuracy or answer-length balance;
+those still need human review.
 
 ## Answer quality rules (since v1.1)
 
