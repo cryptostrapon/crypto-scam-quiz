@@ -67,6 +67,10 @@ Or just open `index.html` directly in a browser (fetch of `questions.json` needs
 
 New scenarios, corrections, translations, and accessibility improvements are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). New here? Start with an issue labeled [good first issue](https://github.com/cryptostrapon/crypto-scam-quiz/labels/good%20first%20issue).
 
+Before submitting data changes, run `node scripts/validate-questions.js` and
+`node --test scripts/validate-questions.test.js` with Node.js 20 or newer.
+No dependency installation is needed. These checks also run on pull requests.
+
 If you add a new scenario, please include:
 - A realistic `scenario` (what the victim sees/experiences)
 - A clear `question`
