@@ -38,6 +38,8 @@ Or use the data directly: [`questions.json`](questions.json) is plain JSON (scen
 
 **Who it is for:** teachers and librarians, community moderators, wallet and exchange support teams, and anyone who wants a short practical scam test.
 
+**Teaching a group?** Use the [five-minute wallet safety lesson](docs/wallet-safety-mini-lesson.md) for a fixed set of five questions, a facilitator answer key and optional anonymous feedback. The lesson is available in English and Spanish and does not require a wallet, account or live transaction.
+
 ## Why this exists
 
 Most scam-awareness content is a static list of "red flags to watch for." It doesn't test whether the reader can actually *apply* that knowledge under the same pressure a real scam creates (urgency, authority, too-good-to-be-true offers). The scenarios are based on patterns observed in investigations, with specific names, amounts and identifying details removed or generalised, so they read the way scams actually happen, not the way a listicle summarizes them.
